@@ -1,0 +1,3 @@
+{"at":"2026-09-24T01:59:12.942Z","id":"N01","event_id":"cek02-N01","replay":false,"routingKey":"ticket.created","result":"CONFIRMED"}
+{"at":"2026-09-24T01:59:12.942Z","id":"N02","event_id":"cek02-N02","replay":false,"routingKey":"ticket.created","result":"CONFIRMED"}
+{"at":"2026-09-24T01:59:12.943Z","id":"N03","event_id":"cek02-N03","replay":false,"routingKey":"ticket.created","result":"CONFIRMED"}

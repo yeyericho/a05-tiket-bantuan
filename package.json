@@ -1,0 +1,25 @@
+{
+  "name": "a05-tiket-bantuan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Capstone MP-11 kasus A05: klasifikasi deterministik dan penugasan tiket bantuan melalui RabbitMQ work queue (data sintetis).",
+  "scripts": {
+    "infra:up": "docker compose up -d --wait",
+    "infra:down": "docker compose down",
+    "infra:hapus": "docker compose down -v",
+    "siapkan": "node tools/siapkan.js",
+    "worker": "node worker.js",
+    "kirim": "node producer.js",
+    "status": "node tools/status.js",
+    "cek": "node tools/cek.js",
+    "uji": "node tools/uji.js",
+    "test": "node --test test/kontrak.test.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.9",
+    "pg": "^8.23.0"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}

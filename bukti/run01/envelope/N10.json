@@ -1,0 +1,11 @@
+{
+  "event_id": "run01-N10",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T01:59:01.532Z",
+  "payload": {
+    "ticket_id": "TKT-run01-N10",
+    "customer_id": "CUS-010",
+    "category": "billing",
+    "subject": "Minta faktur pajak"
+  }
+}

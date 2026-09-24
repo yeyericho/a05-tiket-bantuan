@@ -1,0 +1,11 @@
+{
+  "event_id": "run01-N08",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T01:59:01.532Z",
+  "payload": {
+    "ticket_id": "TKT-run01-N08",
+    "customer_id": "CUS-008",
+    "category": "technical",
+    "subject": "Unggah berkas gagal"
+  }
+}

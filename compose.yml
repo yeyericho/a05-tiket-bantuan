@@ -1,0 +1,43 @@
+# Infrastruktur lokal A05. Port sengaja berbeda dari simpel-lab (5672/15672/5432, dan 5433 bila .env lab diubah)
+# supaya keduanya bisa hidup bersamaan tanpa saling mengganggu data lab.
+# Kredensial di bawah adalah dummy lokal, bukan kredensial nyata.
+name: a05-tiket
+
+services:
+  rabbitmq:
+    image: rabbitmq:4-management
+    hostname: a05-rabbitmq            # nama node tetap -> data antrean bertahan setelah restart
+    environment:
+      RABBITMQ_DEFAULT_USER: simpel
+      RABBITMQ_DEFAULT_PASS: simpel123
+    ports:
+      - "5673:5672"     # AMQP
+      - "15673:15672"   # Management UI: http://localhost:15673
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "check_running"]
+      interval: 10s
+      timeout: 10s
+      retries: 12
+      start_period: 20s
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: simpel
+      POSTGRES_PASSWORD: simpel123
+      POSTGRES_DB: tiket
+    ports:
+      - "5442:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U simpel -d tiket"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  rabbitmq-data:
+  postgres-data:

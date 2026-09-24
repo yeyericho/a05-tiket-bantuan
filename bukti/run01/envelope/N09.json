@@ -1,0 +1,11 @@
+{
+  "event_id": "run01-N09",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T01:59:01.532Z",
+  "payload": {
+    "ticket_id": "TKT-run01-N09",
+    "customer_id": "CUS-009",
+    "category": "feedback",
+    "subject": "Saran tampilan dasbor"
+  }
+}

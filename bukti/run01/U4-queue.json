@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-09-24T01:59:03.105Z",
+  "triage": {
+    "ready": 0,
+    "consumers": 1,
+    "unacked_mgmt": null,
+    "durable": true,
+    "dead_letter_exchange": "support.dlx"
+  },
+  "triage.rejected": {
+    "ready": 1,
+    "consumers": 0,
+    "unacked_mgmt": null,
+    "durable": true,
+    "dead_letter_exchange": null
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "event_id": "cek02-N01",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T01:59:12.916Z",
+  "payload": {
+    "ticket_id": "TKT-cek02-N01",
+    "customer_id": "CUS-001",
+    "category": "billing",
+    "subject": "Permintaan salinan tagihan"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "event_id": "run01-G05",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T01:59:02.208Z",
+  "payload": {
+    "ticket_id": "TKT-run01-G05",
+    "customer_id": "CUS-025",
+    "category": "technical",
+    "subject": "Gagal verifikasi OTP"
+  }
+}

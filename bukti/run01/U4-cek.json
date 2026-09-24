@@ -1,0 +1,75 @@
+{
+  "run": "run01",
+  "stage": "U4",
+  "checked_at": "2026-09-24T01:59:03.186Z",
+  "target": {
+    "total": 26,
+    "FINANCE": 9,
+    "TECH": 9,
+    "GENERAL": 8
+  },
+  "actual": {
+    "total": 26,
+    "FINANCE": 9,
+    "TECH": 9,
+    "GENERAL": 8
+  },
+  "missing": [],
+  "unexpected": [],
+  "rule_violations": [],
+  "unique_ticket_ids": 26,
+  "rejections": [
+    {
+      "rejection_key": "run01-X01",
+      "event_id": "run01-X01",
+      "reason": "payload.ticket_id wajib ada",
+      "rejected_at": "2026-09-24T01:59:03.027Z"
+    }
+  ],
+  "deliveries": [
+    {
+      "outcome": "APPLIED",
+      "n": 26,
+      "redelivered": 0
+    },
+    {
+      "outcome": "DUPLICATE",
+      "n": 5,
+      "redelivered": 0
+    },
+    {
+      "outcome": "REJECTED",
+      "n": 1,
+      "redelivered": 0
+    }
+  ],
+  "events_with_multiple_deliveries": [
+    {
+      "event_id": "run01-N01",
+      "deliveries": 2,
+      "outcomes": "APPLIED,DUPLICATE"
+    },
+    {
+      "event_id": "run01-N02",
+      "deliveries": 2,
+      "outcomes": "APPLIED,DUPLICATE"
+    },
+    {
+      "event_id": "run01-N03",
+      "deliveries": 2,
+      "outcomes": "APPLIED,DUPLICATE"
+    },
+    {
+      "event_id": "run01-N04",
+      "deliveries": 2,
+      "outcomes": "APPLIED,DUPLICATE"
+    },
+    {
+      "event_id": "run01-N05",
+      "deliveries": 2,
+      "outcomes": "APPLIED,DUPLICATE"
+    }
+  ],
+  "lulus": true,
+  "x01_ditolak": true
+}

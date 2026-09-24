@@ -1,0 +1,39 @@
+{
+  "_catatan": "Data sintetis A05. Semua pelanggan dan tiket fiktif. ticket_id dibentuk producer sebagai TKT-<run>-<ID> sehingga berbeda per event valid dan per run.",
+  "tiket": {
+    "N01": { "customer_id": "CUS-001", "category": "billing",   "subject": "Permintaan salinan tagihan" },
+    "N02": { "customer_id": "CUS-002", "category": "technical", "subject": "Aplikasi gagal login" },
+    "N03": { "customer_id": "CUS-003", "category": "account",   "subject": "Ganti alamat email akun" },
+    "N04": { "customer_id": "CUS-004", "category": "billing",   "subject": "Tagihan ganda bulan ini" },
+    "N05": { "customer_id": "CUS-005", "category": "technical", "subject": "Halaman laporan lambat dibuka" },
+    "N06": { "customer_id": "CUS-006", "category": "delivery",  "subject": "Dokumen fisik belum diterima" },
+    "N07": { "customer_id": "CUS-007", "category": "billing",   "subject": "Kode pembayaran kedaluwarsa" },
+    "N08": { "customer_id": "CUS-008", "category": "technical", "subject": "Unggah berkas gagal" },
+    "N09": { "customer_id": "CUS-009", "category": "feedback",  "subject": "Saran tampilan dasbor" },
+    "N10": { "customer_id": "CUS-010", "category": "billing",   "subject": "Minta faktur pajak" },
+    "N11": { "customer_id": "CUS-011", "category": "technical", "subject": "Notifikasi tidak muncul" },
+    "N12": { "customer_id": "CUS-012", "category": "account",   "subject": "Reset kata sandi" },
+    "N13": { "customer_id": "CUS-013", "category": "billing",   "subject": "Refund pembayaran" },
+    "N14": { "customer_id": "CUS-014", "category": "technical", "subject": "Error 500 saat simpan" },
+    "N15": { "customer_id": "CUS-015", "category": "delivery",  "subject": "Status kiriman tidak berubah" },
+    "N16": { "customer_id": "CUS-016", "category": "billing",   "subject": "Rincian biaya layanan" },
+    "N17": { "customer_id": "CUS-017", "category": "technical", "subject": "Sesi sering keluar sendiri" },
+    "N18": { "customer_id": "CUS-018", "category": "feedback",  "subject": "Apresiasi petugas layanan" },
+    "N19": { "customer_id": "CUS-019", "category": "billing",   "subject": "Pembayaran belum tercatat" },
+    "N20": { "customer_id": "CUS-020", "category": "technical", "subject": "Ekspor data kosong" },
+    "G01": { "customer_id": "CUS-021", "category": "billing",   "subject": "Salah nominal tagihan" },
+    "G02": { "customer_id": "CUS-022", "category": "technical", "subject": "Tombol kirim tidak aktif" },
+    "G03": { "customer_id": "CUS-023", "category": "account",   "subject": "Tambah pengguna organisasi" },
+    "G04": { "customer_id": "CUS-024", "category": "billing",   "subject": "Minta perpanjangan jatuh tempo" },
+    "G05": { "customer_id": "CUS-025", "category": "technical", "subject": "Gagal verifikasi OTP" },
+    "V01": { "customer_id": "CUS-026", "category": "account",   "subject": "Hapus akun lama" },
+    "X01": { "customer_id": "CUS-027", "category": "billing",   "subject": "Tiket tanpa ticket_id", "_tanpa_ticket_id": true }
+  },
+  "harapan": {
+    "_catatan": "Target setelah tiap uji, dihitung dari aturan billing->FINANCE, technical->TECH, lainnya->GENERAL. X01 tidak dihitung.",
+    "U1": { "total": 20, "FINANCE": 7, "TECH": 7, "GENERAL": 6 },
+    "U2": { "total": 25, "FINANCE": 9, "TECH": 9, "GENERAL": 7 },
+    "U3": { "total": 25, "FINANCE": 9, "TECH": 9, "GENERAL": 7 },
+    "U4": { "total": 26, "FINANCE": 9, "TECH": 9, "GENERAL": 8 }
+  }
+}
