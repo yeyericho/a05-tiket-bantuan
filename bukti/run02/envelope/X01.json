@@ -1,0 +1,10 @@
+{
+  "event_id": "run02-X01",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T04:26:16.843Z",
+  "payload": {
+    "customer_id": "CUS-027",
+    "category": "billing",
+    "subject": "Tiket tanpa ticket_id"
+  }
+}

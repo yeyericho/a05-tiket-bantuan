@@ -1,0 +1,11 @@
+{
+  "event_id": "run02-G04",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T04:26:15.997Z",
+  "payload": {
+    "ticket_id": "TKT-run02-G04",
+    "customer_id": "CUS-024",
+    "category": "billing",
+    "subject": "Minta perpanjangan jatuh tempo"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "run": "run02",
+  "dimulai": "2026-09-24T04:26:15.049Z",
+  "batas_tunggu_dtk": 60,
+  "uji": {
+    "U1": {
+      "lulus": true,
+      "hasil": {
+        "total": 20,
+        "FINANCE": 7,
+        "TECH": 7,
+        "GENERAL": 6
+      },
+      "tunggu_ms": 540
+    },
+    "U2": {
+      "lulus": true,
+      "saat_gangguan": {
+        "ready": 5,
+        "consumers": 0,
+        "assignment": 20
+      },
+      "hasil": {
+        "total": 25,
+        "FINANCE": 9,
+        "TECH": 9,
+        "GENERAL": 7
+      },
+      "tunggu_pulih_ms": 513
+    },
+    "U3": {
+      "lulus": true,
+      "hasil": {
+        "total": 25,
+        "FINANCE": 9,
+        "TECH": 9,
+        "GENERAL": 7
+      },
+      "duplikat_ditahan": 5
+    },
+    "U4": {
+      "lulus": true,
+      "hasil": {
+        "total": 26,
+        "FINANCE": 9,
+        "TECH": 9,
+        "GENERAL": 8
+      },
+      "x01": {
+        "rejection_key": "run02-X01",
+        "event_id": "run02-X01",
+        "reason": "payload.ticket_id wajib ada",
+        "rejected_at": "2026-09-24T04:26:16.875Z"
+      },
+      "dlq_bertambah": 1
+    }
+  },
+  "selesai": "2026-09-24T04:26:17.103Z",
+  "perintah": [
+    "WORKER_ID=w1 node worker.js",
+    "node producer.js --run run02 --ids N01-N20",
+    "node producer.js --run run02 --ids G01-G05",
+    "WORKER_ID=w1 node worker.js",
+    "node producer.js --run run02 --ids N01-N05 --replay",
+    "node producer.js --run run02 --ids X01",
+    "node producer.js --run run02 --ids V01",
+    "node tools/cek.js --run run02 --tahap U4 --simpan"
+  ]
+}

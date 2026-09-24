@@ -1,0 +1,11 @@
+{
+  "event_id": "run02-N19",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T04:26:15.316Z",
+  "payload": {
+    "ticket_id": "TKT-run02-N19",
+    "customer_id": "CUS-019",
+    "category": "billing",
+    "subject": "Pembayaran belum tercatat"
+  }
+}

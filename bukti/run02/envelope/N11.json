@@ -1,0 +1,11 @@
+{
+  "event_id": "run02-N11",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T04:26:15.316Z",
+  "payload": {
+    "ticket_id": "TKT-run02-N11",
+    "customer_id": "CUS-011",
+    "category": "technical",
+    "subject": "Notifikasi tidak muncul"
+  }
+}

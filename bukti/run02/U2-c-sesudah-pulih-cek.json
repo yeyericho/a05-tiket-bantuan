@@ -1,0 +1,31 @@
+{
+  "run": "run02",
+  "stage": "U2",
+  "checked_at": "2026-09-24T04:26:16.672Z",
+  "target": {
+    "total": 25,
+    "FINANCE": 9,
+    "TECH": 9,
+    "GENERAL": 7
+  },
+  "actual": {
+    "total": 25,
+    "FINANCE": 9,
+    "TECH": 9,
+    "GENERAL": 7
+  },
+  "missing": [],
+  "unexpected": [],
+  "rule_violations": [],
+  "unique_ticket_ids": 25,
+  "rejections": [],
+  "deliveries": [
+    {
+      "outcome": "APPLIED",
+      "n": 25,
+      "redelivered": 0
+    }
+  ],
+  "events_with_multiple_deliveries": [],
+  "lulus": true
+}

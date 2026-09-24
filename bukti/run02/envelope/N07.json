@@ -1,0 +1,11 @@
+{
+  "event_id": "run02-N07",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T04:26:15.315Z",
+  "payload": {
+    "ticket_id": "TKT-run02-N07",
+    "customer_id": "CUS-007",
+    "category": "billing",
+    "subject": "Kode pembayaran kedaluwarsa"
+  }
+}

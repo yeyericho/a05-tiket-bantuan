@@ -1,0 +1,11 @@
+{
+  "event_id": "run02-N20",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T04:26:15.317Z",
+  "payload": {
+    "ticket_id": "TKT-run02-N20",
+    "customer_id": "CUS-020",
+    "category": "technical",
+    "subject": "Ekspor data kosong"
+  }
+}

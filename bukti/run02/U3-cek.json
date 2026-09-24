@@ -1,0 +1,62 @@
+{
+  "run": "run02",
+  "stage": "U3",
+  "checked_at": "2026-09-24T04:26:16.792Z",
+  "target": {
+    "total": 25,
+    "FINANCE": 9,
+    "TECH": 9,
+    "GENERAL": 7
+  },
+  "actual": {
+    "total": 25,
+    "FINANCE": 9,
+    "TECH": 9,
+    "GENERAL": 7
+  },
+  "missing": [],
+  "unexpected": [],
+  "rule_violations": [],
+  "unique_ticket_ids": 25,
+  "rejections": [],
+  "deliveries": [
+    {
+      "outcome": "APPLIED",
+      "n": 25,
+      "redelivered": 0
+    },
+    {
+      "outcome": "DUPLICATE",
+      "n": 5,
+      "redelivered": 0
+    }
+  ],
+  "events_with_multiple_deliveries": [
+    {
+      "event_id": "run02-N01",
+      "deliveries": 2,
+      "outcomes": "APPLIED,DUPLICATE"
+    },
+    {
+      "event_id": "run02-N02",
+      "deliveries": 2,
+      "outcomes": "APPLIED,DUPLICATE"
+    },
+    {
+      "event_id": "run02-N03",
+      "deliveries": 2,
+      "outcomes": "APPLIED,DUPLICATE"
+    },
+    {
+      "event_id": "run02-N04",
+      "deliveries": 2,
+      "outcomes": "APPLIED,DUPLICATE"
+    },
+    {
+      "event_id": "run02-N05",
+      "deliveries": 2,
+      "outcomes": "APPLIED,DUPLICATE"
+    }
+  ],
+  "lulus": true
+}

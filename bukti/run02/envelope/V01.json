@@ -1,0 +1,11 @@
+{
+  "event_id": "run02-V01",
+  "event_type": "ticket.created",
+  "occurred_at": "2026-09-24T04:26:16.932Z",
+  "payload": {
+    "ticket_id": "TKT-run02-V01",
+    "customer_id": "CUS-026",
+    "category": "account",
+    "subject": "Hapus akun lama"
+  }
+}
